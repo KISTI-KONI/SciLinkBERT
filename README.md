@@ -4,7 +4,17 @@
 ## Introduction
 
 SciLinkBERT is a BERT-based pre-trained language model specifically designed to enhance the understanding of scientific texts by incorporating citation information. This model is particularly useful in scientific domains, where understanding complex language and extracting meaningful information from citations is crucial.
+[[PDF]](https://arxiv.org/pdf/.pdf)
+[[HuggingFace Models]](https://huggingface.co/yujuyeon/SciLinkBERT)
 
+To use these models in 🤗 Transformers:
+```python
+from transformers import AutoTokenizer, AutoModel
+tokenizer = AutoTokenizer.from_pretrained('yujuyeon/SciLinkBERT')
+model = AutoModel.from_pretrained('yujuyeon/SciLinkBERT')
+inputs = tokenizer("Hello, my dog is cute", return_tensors="pt")
+outputs = model(**inputs)
+```
 
 ## Fine-Tuning on SciERC & GENIA
 
@@ -51,8 +61,9 @@ You can download the preprocessed datasets on which we evaluated LinkBERT from [
 
 ### Train the model
 ```bash
-run_examples_blurb_biolinkbert-base.sh
-run_examples_medqa_biolinkbert-base.sh
+cd src/
+run_examples_blurb_scilinkbert-base.sh
+run_examples_medqa_scilinkbert-base.sh
 ```
 
 ## References and Additional Resources
