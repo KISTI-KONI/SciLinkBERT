@@ -26,11 +26,11 @@ Ensure your cluster environment is correctly configured for distributed training
 #### On Node 0
 
 ```bash
-python -m torch.distributed.launch --nnodes=2 --nproc_per_node=2 --node_rank=0 --master_addr=203.250.238.31 --master_port=23456 ddp_training_ebert.py
+python -m torch.distributed.launch --nnodes=2 --nproc_per_node=2 --node_rank=0 --master_addr= --master_port= ddp_training_ebert.py
 ```
 #### On Node 1
 ```bash
-python -m torch.distributed.launch --nnodes=2 --nproc_per_node=2 --node_rank=1 --master_addr=203.250.238.31 --master_port=23456 ddp_training_ebert.py
+python -m torch.distributed.launch --nnodes=2 --nproc_per_node=2 --node_rank=1 --master_addr= --master_port= ddp_training_ebert.py
 ```
 
 ## Fine-Tuning on SciERC & GENIA
