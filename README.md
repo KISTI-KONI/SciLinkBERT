@@ -15,6 +15,23 @@ model = AutoModel.from_pretrained('yujuyeon/SciLinkBERT')
 inputs = tokenizer("Hello, my dog is cute", return_tensors="pt")
 outputs = model(**inputs)
 ```
+## Pretraining SciLinkBERT
+
+Before fine-tuning on downstream tasks, you can pretrain SciLinkBERT on large-scale scientific corpora using distributed training. The following steps describe how to launch pretraining with PyTorch's distributed launch utility.
+
+### Distributed Pretraining Setup
+
+Ensure your cluster environment is correctly configured for distributed training. Adjust the parameters (e.g., `--nnodes`, `--nproc_per_node`, `--node_rank`, `--master_addr`, and `--master_port`) to match your system setup.
+
+#### On Node 0
+
+```bash
+python -m torch.distributed.launch --nnodes=2 --nproc_per_node=2 --node_rank=0 --master_addr=203.250.238.31 --master_port=23456 ddp_training_ebert.py
+```
+#### On Node 1
+```bash
+python -m torch.distributed.launch --nnodes=2 --nproc_per_node=2 --node_rank=1 --master_addr=203.250.238.31 --master_port=23456 ddp_training_ebert.py
+```
 
 ## Fine-Tuning on SciERC & GENIA
 
