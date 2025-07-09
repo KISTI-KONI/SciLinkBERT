@@ -99,9 +99,9 @@ If you use SciLinkBERT in your research, please cite the following paper:
 @article{Yu2024SciLinkBERT,
   title={SciLinkBERT: A Language Model for Understanding Scientific Texts with Citation Information},
   author={Ju-Yeon Yu, Donghun Yang, Kyong-Ha Lee},
-  journal={IEEE Access},
-  year={2024},
-  doi={10.1109/ACCESS.2017.DOI},
+  journal={},
+  year={},
+  doi={},
 }
 ```
 
