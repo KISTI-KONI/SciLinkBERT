@@ -63,7 +63,7 @@ BLURB is a biomedical language understanding benchmark suite. You can fine-tune 
 
 ### Setting
 ```bash
-git clone [https://github.com/dwadden/dygiepp](https://github.com/michiyasunaga/LinkBERT)
+git clone https://github.com/michiyasunaga/LinkBERT
 conda create -n linkbert python=3.8
 source activate linkbert
 pip install torch==1.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
