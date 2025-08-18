@@ -54,7 +54,7 @@ bash ./scripts/data/get_genia.sh
 ### Train the model
 ```bash
 bash scripts/train.sh scierc
-bash scripts/train genia
+bash scripts/train.sh genia
 ```
 
 ## Fine-Tuning on BLURB & MedQA
