@@ -96,12 +96,15 @@ For more advanced fine-tuning and implementation details, you can refer to the f
 If you use SciLinkBERT in your research, please cite the following paper:
 
 ```
-@article{Yu2024SciLinkBERT,
-  title={SciLinkBERT: A Language Model for Understanding Scientific Texts with Citation Information},
+@article{Yu2025SciLinkBERT,
+  title={SciLinkBERT: A BERT-style language model for understanding scentific texts with citations},
   author={Ju-Yeon Yu, Donghun Yang, Kyong-Ha Lee},
-  journal={},
-  year={},
-  doi={},
+  journal={Journal of Supercomputing},
+  year={2025},
+  volume={81},
+  pages={1356}
+  doi={https://doi.org/10.1007/s11227-025-07838-y},
+  publisher={Springer}
 }
 ```
 
